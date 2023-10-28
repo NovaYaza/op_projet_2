@@ -67,6 +67,10 @@ ul li:hover {
 .input_searchbar {
   border: 1px solid #f2f2f2;
   padding: 11px;
+}
+
+input::placeholder {
+  font-weight: 700;
   color: #000;
 }
 
