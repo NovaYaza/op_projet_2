@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/png" href="images/Booki_favicon.png"/>
+    <link rel="icon" type="image/png" href="images/Booki_favicon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -23,27 +23,31 @@
             </ul>
         </nav>
         <header>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h1 class="main_title">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
             <div class="searchbar">
                 <div class="icon_position"><i class="fa-solid fa-location-dot"></i></div>
                 <div><input class="input_searchbar" type="search" placeholder="Marseille, France"></div>
-                <div><button class="button_search">Rechercher</button></div>
+                <div><button class="button_search button_search_desktop">Rechercher</button></div>
+                <div><button class="button_search button_search_mobile"><i
+                            class="fa-solid fa-magnifying-glass"></i></button></div>
             </div>
         </header>
         <main>
             <section class="filtre">
-                <h3>Filtres</h3>
-                <button class="button_filtre"><i
-                        class="fa-solid fa-money-bill-wave fa-lg settings_fa"></i>Économique</button>
-                <button class="button_filtre"><i class="fa-solid fa-person fa-lg settings_fa"></i>Familial</button>
-                <button class="button_filtre"><i class="fa-solid fa-heart fa-lg settings_fa"></i>Romantique</button>
-                <button class="button_filtre"><i class="fa-solid fa-fire fa-lg settings_fa"></i>Nos pépites</button>
+                <h3 class="title_filter">Filtres</h3>
+                <div class="content_filtre">
+                    <button class="button_filtre"><i
+                            class="fa-solid fa-money-bill-wave fa-lg settings_fa"></i>Économique</button>
+                    <button class="button_filtre"><i class="fa-solid fa-person fa-lg settings_fa"></i>Familial</button>
+                    <button class="button_filtre"><i class="fa-solid fa-heart fa-lg settings_fa"></i>Romantique</button>
+                    <button class="button_filtre"><i class="fa-solid fa-fire fa-lg settings_fa"></i>Nos pépites</button>
+                </div>
             </section>
-            <section class="info"><i class="info_icon fa-solid fa-info fa-2xs settings_fa"></i>
+            <div class="info"><i class="info_icon fa-solid fa-info fa-2xs settings_fa"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </section>
-            <div class="part_1">
+            </div>
+            <div class="part_h_p">
                 <a id="hebergements"></a>
                 <section class="section_hebergement section_hebergement_width">
                     <h2>Hébergements à Marseille</h2>
@@ -54,7 +58,7 @@
                                     alt="Petite chambre sur un ton gris contenant 2 lits une personne">
                                 <div class="content_article_hebergement">
                                     <h3 class="card_title_hebergement">Hôtel du port</h3>
-                                    <p>Nuit à partir de 52€</p>
+                                    <p>Nuit à partir de 52<span class="euro">€</span></p>
                                     <div class="star_rating_hebergement">
                                         <i class="fa-solid fa-star color_blue_star"></i><i
                                             class="fa-solid fa-star color_blue_star"></i><i
@@ -71,7 +75,7 @@
                                     alt="Chambre d'un style neutre et basique contenant 2 lits une personne">
                                 <div class="content_article_hebergement">
                                     <h3 class="card_title_hebergement">Hôtel Chez Amina</h3>
-                                    <p>Nuit à partir de 96€</p>
+                                    <p>Nuit à partir de 96<span class="euro">€</span></p>
                                     <div class="star_rating_hebergement">
                                         <i class="fa-solid fa-star color_blue_star"></i><i
                                             class="fa-solid fa-star color_blue_star"></i><i
@@ -88,7 +92,7 @@
                                     alt="Chambre assez moderne avec un miroir, un sol et une tapisserie contenant des formes géométriques et possédant 2 lits une personne">
                                 <div class="content_article_hebergement">
                                     <h3 class="card_title_hebergement">Hôtel Les mouettes</h3>
-                                    <p>Nuit à partir de 76€</p>
+                                    <p>Nuit à partir de 76<span class="euro">€</span></p>
                                     <div class="star_rating_hebergement">
                                         <i class="fa-solid fa-star color_blue_star"></i><i
                                             class="fa-solid fa-star color_blue_star"></i><i
@@ -105,7 +109,7 @@
                                     alt="Chambre contenant un lit double sur le thème de la mer et de la plage, des tons bleus et couleurs sables domine la chambre">
                                 <div class="content_article_hebergement">
                                     <h3 class="card_title_hebergement">Hôtel de la mer</h3>
-                                    <p>Nuit à partir de 46€</p>
+                                    <p>Nuit à partir de 46<span class="euro">€</span></p>
                                     <div class="star_rating_hebergement">
                                         <i class="fa-solid fa-star color_blue_star"></i><i
                                             class="fa-solid fa-star color_blue_star"></i><i
@@ -122,7 +126,7 @@
                                     alt="Petite chambre basique en centre-ville avec un lit superposé">
                                 <div class="content_article_hebergement">
                                     <h3 class="card_title_hebergement">Auberge La Canebière</h3>
-                                    <p>Nuit à partir de 25€</p>
+                                    <p>Nuit à partir de 25<span class="euro">€</span></p>
                                     <div class="star_rating_hebergement">
                                         <i class="fa-solid fa-star color_blue_star"></i><i
                                             class="fa-solid fa-star color_blue_star"></i><i
@@ -139,7 +143,7 @@
                                     alt="Chambre contenant plusieurs lits superposés sur un thème boisé">
                                 <div class="content_article_hebergement">
                                     <h3 class="card_title_hebergement">Auberge Le Panier</h3>
-                                    <p>Nuit à partir de 23€</p>
+                                    <p>Nuit à partir de 23<span class="euro">€</span></p>
                                     <div class="star_rating_hebergement">
                                         <i class="fa-solid fa-star color_blue_star"></i><i
                                             class="fa-solid fa-star color_blue_star"></i><i
@@ -166,7 +170,7 @@
                                 <div class="content_article_populaire">
                                     <div class="text_card">
                                         <h3 class="card_title">Hôtel Le Soleil du matin</h3>
-                                        <p>Nuit à partir de 128€</p>
+                                        <p>Nuit à partir de 128<span class="euro">€</span></p>
                                     </div>
                                     <div class="star_rating">
                                         <i class="fa-solid fa-star color_blue_star"></i><i
@@ -185,7 +189,7 @@
                                 <div class="content_article_populaire">
                                     <div class="text_card">
                                         <h3 class="card_title">Chambres d'hôtes Au coeur de l'eau</h3>
-                                        <p>Nuit à partir de 71€</p>
+                                        <p>Nuit à partir de 71<span class="euro">€</span></p>
                                     </div>
                                     <div class="star_rating">
                                         <i class="fa-solid fa-star color_blue_star"></i><i
@@ -204,7 +208,7 @@
                                 <div class="content_article_populaire">
                                     <div class="text_card">
                                         <h3 class="card_title">Hôtel Bleu et Blanc</h3>
-                                        <p>Nuit à partir de 68€</p>
+                                        <p>Nuit à partir de 68<span class="euro">€</span></p>
                                     </div>
                                     <div class="star_rating">
                                         <i class="fa-solid fa-star color_blue_star"></i><i
@@ -219,36 +223,36 @@
                     </div>
                 </section>
             </div>
-            <a id="activites"></a>
-            <section class="part_2">
-                <h2>Activités à Marseille</h2>
+            <section class="part_act">
+                <a id="activites"></a>
+                <h2 class="title_activites">Activités à Marseille</h2>
                 <div class="activites">
                     <a href="">
                         <article class="article_activites">
                             <img class="img_activites" src="images/vieux_port.jpg"
                                 alt="Photo du vieux port de Marseille avec beaucoup de bateaux et une partie de la ville">
-                            <p class="name_activite">Vieux-Port</p>
+                            <h3 class="name_activite">Vieux-Port</h3>
                         </article>
                     </a>
                     <a href="">
                         <article class="article_activites">
                             <img class="img_activites" src="images/fort_de_pomegues.jpg"
                                 alt="Photo d'un fort au milieu de roches et de cailloux">
-                            <p class="name_activite">Fort de Pomègues</p>
+                            <h3 class="name_activite">Fort de Pomègues</h3>
                         </article>
                     </a>
                     <a href="">
                         <article class="article_activites">
                             <img class="img_activites" src="images/parc_national_des_calanques.jpg"
                                 alt="Photo de la mer avec un ensemble de petites montages, de rochers et de buissons">
-                            <p class="name_activite">Parc national des Calanques</p>
+                            <h3 class="name_activite">Parc national des Calanques</h3>
                         </article>
                     </a>
                     <a href="">
                         <article class="article_activites">
                             <img class="img_activites" src="images/notre_dame_de_la_garde.jpg"
                                 alt="Photo de la ville de marseille avec notre dame de la garde à son sommet">
-                            <p class="name_activite">Notre-Dame-de-la-Garde</p>
+                            <h3 class="name_activite">Notre-Dame-de-la-Garde</h3>
                         </article>
                     </a>
                 </div>
@@ -270,7 +274,7 @@
                     <a class="link_footer" href="#">Proposer votre hôtel</a>
                 </div>
             </section>
-            <section class="content_footer">
+            <section class="content_footer last_link_footer">
                 <h3>Assistance</h3>
                 <div class="content_link_footer">
                     <a class="link_footer" href="#">Centre d'aide</a>
