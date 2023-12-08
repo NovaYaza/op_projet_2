@@ -108,7 +108,7 @@ input::placeholder {
 /* Modifications font-awesome */
 .settings_fa {
   color: #0065FC;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 /* Modifications symbole euro */
@@ -308,7 +308,6 @@ article {
 
 .content_footer {
   padding: 20px 0px 20px 20px;
-  /*padding-right: 1.5em;*/
 }
 
 .content_link_footer {
@@ -365,12 +364,12 @@ article {
 
 /* Partie activites */
   .article_activites img {
-    width: 194px;
-    height: 200px;
+    width: 180px;
+    height: 190px;
   }
 
   .name_activite {
-    font-size: 12px;
+    font-size: 11px;
   }
 
 /* Footer */
@@ -416,6 +415,10 @@ article {
     border-bottom: 2px solid #0065FC;
   }
 
+  ul li:hover > a { 
+    color: #0065FC;
+  }
+
   .main_title {
     margin: 20px 0px 5px 0px;
   }
@@ -452,8 +455,14 @@ article {
   }
 
   .button_filtre {
-    width: 40%;
-    margin: 0px 0px 20px 20px;
+    width: 48%;
+    margin: 0px 0px 20px 5px;
+    padding: 10px 9px 10px 9px;
+  }
+
+/* Ligne d'informations */
+  .info {
+    margin-top: 15px;
   }
 
 /* Partie populaire */
